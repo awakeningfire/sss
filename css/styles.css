@@ -1,0 +1,26 @@
+@import "reset.css";
+
+@import "components/background.css";
+@import "components/clock.css";
+@import "components/weather.css";
+@import "components/welcome.css";
+@import "components/toDo.css";
+@import "components/message.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

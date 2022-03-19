@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+  </head>
+  <body>
+    <h2 class="clock">00:00</h2>
+    <!-- 1.1 welcome.js
+      - form, h1을 default:hiiden으로 사용하지 않았을 때, 페이지 새로고침시 마다 form형태가 나타났다 사라짐 -->
+    <form method="get" class="greeting-form hidden">
+      <input type="text" autofocus placeholder="Name" class="greeting-input" />
+      <input type="submit" class="greeting-submit" value="Login" />
+    </form>
+    <h1 class="greeting hidden"></h1>
+    <form method="get" class="to-do-form">
+      <input type="text" placeholder="To Do" class="to-do-input" />
+      <input type="submit" value="Add" />
+    </form>
+    <ul class="to-do__list"></ul>
+
+    <h2 class="messages"></h2>
+    <h3 class="weather"></h3>
+
+    <script src="js/welcome.js"></script>
+    <script src="js/toDo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/messages.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

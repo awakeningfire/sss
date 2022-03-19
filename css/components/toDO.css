@@ -1,0 +1,64 @@
+.to-do-form {
+  position: absolute;
+  top: 210px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.to-do-input {
+  border: none;
+  height: 30px;
+  font-size: 20px;
+}
+.to-do-input::placeholder {
+  font-size: 20px;
+}
+
+.to-do__list::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.to-do__list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.to-do__list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.to-do__list {
+  position: absolute;
+  top: 270px;
+  padding: 10px 20px;
+  width: 330px;
+  max-height: 490px;
+  /* background-color: white; */
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+.to-do__item {
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.to-do__item span {
+  width: 80%;
+  margin-left: 5px;
+}
+
+.done {
+  background-color: rgba(189, 189, 189, 0.87);
+}
+.done span {
+  text-decoration: line-through;
+}
